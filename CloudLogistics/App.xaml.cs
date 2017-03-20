@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CloudLogistics.Views;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,7 +14,7 @@ namespace CloudLogistics
         {
             InitializeComponent();
 
-            MainPage = new CloudLogistics.MainPage();
+            MainPage = new LoginPage();
         }
 
         protected override void OnStart()

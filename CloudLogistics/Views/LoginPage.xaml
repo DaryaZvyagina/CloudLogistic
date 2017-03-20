@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CloudLogistics.Views.LoginPage"
+             Padding="20,100,20,20"
+             BackgroundColor="#FF1B4096">
+
+    <StackLayout>
+        <Label Text="CL"
+               HorizontalOptions="Center"
+               FontSize="50"
+               FontFamily="Arial"
+               TextColor="White"/>
+        <Label Text="Ваш email"
+               TextColor="White"
+               HorizontalOptions="Center"/>
+        <Entry Text="{Binding EMail}"/>
+        <Label Text="Пароль"
+               TextColor="White"
+               HorizontalOptions="Center"/>
+        <Entry Text="{Binding Password}" IsPassword ="True" />
+
+        <StackLayout Padding="40,0,40,0">
+            <Button Text="Вход"
+				    Command="{Binding LoginCommand}"
+                    BackgroundColor="White"
+                    TextColor="#FF2346C4"/>
+            <Button Text="Регистрация"
+				    Command="{Binding RegisterCommand}"
+                    BackgroundColor="#FF304AA6"
+                    TextColor="White"
+                    BorderColor="Black"/>
+        </StackLayout>
+    </StackLayout>
+</ContentPage>

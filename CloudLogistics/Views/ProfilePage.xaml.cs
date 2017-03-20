@@ -3,13 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+
 using Xamarin.Forms;
 
-namespace CloudLogistics
+namespace CloudLogistics.Views
 {
-    public partial class MainPage : ContentPage
+    public partial class ProfilePage : ContentPage
     {
-        public MainPage()
+        public ProfilePage()
         {
             InitializeComponent();
         }
