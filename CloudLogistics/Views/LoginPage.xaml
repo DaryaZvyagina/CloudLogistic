@@ -6,28 +6,21 @@
              BackgroundColor="#FF1B4096">
 
     <StackLayout>
-        <Label Text="CL"
-               HorizontalOptions="Center"
-               FontSize="50"
-               FontFamily="Arial"
-               TextColor="White"/>
-        <Label Text="Ваш email"
-               TextColor="White"
-               HorizontalOptions="Center"/>
-        <Entry Text="{Binding EMail}"/>
-        <Label Text="Пароль"
-               TextColor="White"
-               HorizontalOptions="Center"/>
-        <Entry Text="{Binding Password}" IsPassword ="True" />
-
+        <Label Text="CloudLogistic"
+                   HorizontalOptions="Center"
+                   FontSize="40"
+                   FontFamily="Arial"
+                   TextColor="White"/>
+        <Entry Text="{Binding EMail}" Placeholder="Ваш email" TextColor="White"/>
+        <Entry Text="{Binding Password}" IsPassword ="True" Placeholder="Пароль" TextColor="White" />
         <StackLayout Padding="40,0,40,0">
             <Button Text="Вход"
 				    Command="{Binding LoginCommand}"
                     BackgroundColor="White"
-                    TextColor="#FF2346C4"/>
+                    TextColor="#FF1B4096"/>
             <Button Text="Регистрация"
 				    Command="{Binding RegisterCommand}"
-                    BackgroundColor="#FF304AA6"
+                    BackgroundColor="#E86A0C"
                     TextColor="White"
                     BorderColor="Black"/>
         </StackLayout>

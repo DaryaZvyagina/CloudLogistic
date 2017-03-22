@@ -1,34 +1,24 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="CloudLogistics.Views.RegisterPage">
+             x:Class="CloudLogistics.Views.RegisterPage"
+             Title="Регистрация"
+             Padding="20,40,20,0">
     <StackLayout>
 
-        <Label Text="Ваш email"
-               TextColor="White"
-               HorizontalOptions="Center"/>
-        <Entry Text="{Binding EMail}"/>
-        <Label Text="Пароль"
-               TextColor="White"
-               HorizontalOptions="Center"/>
-        <Entry Text="{Binding Password}" IsPassword ="True" />
-        <Label Text="Еще какие-то данные"
-               TextColor="White"
-               HorizontalOptions="Center"/>
-        <Entry Text="{Binding One}"/>
-        <Label Text="И тут данные"
-               TextColor="White"
-               HorizontalOptions="Center"/>
-        <Entry Text="{Binding Two}"/>
-        <Label Text="И даже тут"
-               TextColor="White"
-               HorizontalOptions="Center"/>
-        <Entry Text="{Binding Three}"/>
 
-        <Button Text="Зарегистрироваться"
+        <Entry Text="{Binding EMail}" Placeholder="Ваш email" />
+        <Entry Text="{Binding Password}" IsPassword ="True" Placeholder="Пароль"/>
+        <Entry Text="{Binding One}" Placeholder="Данные"/>
+        <Entry Text="{Binding Two}" Placeholder="Данные"/>
+        <Entry Text="{Binding Three}" Placeholder="Данные"/>
+
+        <StackLayout Padding="40,0,40,0">
+            <Button Text="Зарегистрироваться"
 				Command="{Binding ProfileCommand}"
-                BackgroundColor="White"
-                TextColor="#FF2346C4"/>
+                BackgroundColor="#E86A0C"
+                TextColor="White"/>
+        </StackLayout>
 
     </StackLayout>
 </ContentPage>
